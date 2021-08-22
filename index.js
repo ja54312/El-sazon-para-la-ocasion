@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./src/React/header/header";
 
 
 export default function App(){
   return(
     <>
-       <h1>holi crayoli</h1>
+       <Header></Header>
     
     </>
   )
