@@ -29657,7 +29657,51 @@ function Header() {
     className: "header"
   }, "El Sazon para la ocasion")));
 }
-},{"react":"node_modules/react/index.js","./header.css":"src/React/header/header.css"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./header.css":"src/React/header/header.css"}],"src/React/body/body.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/React/body/body.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Body;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./body.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Body() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("body", null, /*#__PURE__*/_react.default.createElement("h2", null, "body")));
+}
+},{"react":"node_modules/react/index.js","./body.css":"src/React/body/body.css"}],"src/React/footer/footer.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/React/footer/footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Footer;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./footer.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Footer() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("h2", null, "footer")));
+}
+},{"react":"node_modules/react/index.js","./footer.css":"src/React/footer/footer.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29671,16 +29715,20 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _header = _interopRequireDefault(require("./src/React/header/header"));
 
+var _body = _interopRequireDefault(require("./src/React/body/body"));
+
+var _footer = _interopRequireDefault(require("./src/React/footer/footer"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_body.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
 
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/React/header/header":"src/React/header/header.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/React/header/header":"src/React/header/header.js","./src/React/body/body":"src/React/body/body.js","./src/React/footer/footer":"src/React/footer/footer.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29708,7 +29756,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45765" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34101" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
