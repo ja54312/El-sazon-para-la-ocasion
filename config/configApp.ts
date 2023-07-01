@@ -1,3 +1,3 @@
 export const configApp = {
-  nameApp: "Aplication",
+  nameApp: "El sazon para la ocasion",
 };
