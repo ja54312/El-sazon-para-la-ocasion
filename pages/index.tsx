@@ -4,6 +4,11 @@ import { Inter } from 'next/font/google'
 import ClientOnly from '@/src/components/ClientOnly/ClientOnly'
 import Header from '@/src/components/Header/Header'
 import Footer from '@/src/components/Footer/Footer'
+import Frases from '@/src/components/Frases/Frases'
+import Carrousel from '@/src/components/Carrousel/Carrousel'
+import Banners from '@/src/components/Banners/Banners'
+import Condiciones from '@/src/components/Condiciones/Condiciones'
+import Contacto from '@/src/components/Contacto/Contacto'
 //Config
 import {configApp} from '../config/configApp'
 
@@ -20,6 +25,12 @@ export default function Home() {
       </Head>
       <ClientOnly>
         <Header/>
+        <Frases/>
+        <Carrousel/>
+        <Frases/>
+        <Banners/>
+        <Contacto/>
+        <Condiciones/>
         <Footer/>
       </ClientOnly>
     </>
